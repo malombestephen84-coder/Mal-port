@@ -53,3 +53,78 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+.theme-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.theme-btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #000000;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #60a5fa;
+}
+
+/* Mobile menu button */
+.menu-btn {
+    display: none;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Mobile screen layout */
+@media (max-width: 768px) {
+
+    header {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+}
