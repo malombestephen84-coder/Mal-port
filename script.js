@@ -5,7 +5,7 @@ const savedTheme = localStorage.getItem("theme");
 
 if (savedTheme === "dark") {
     document.body.classList.add("dark-mode");
-    themeButton.textContent = "☀️ Light Mode";
+    themeButton.textContent = " Light Mode";
 }
 
 // Handle button clicks
@@ -16,12 +16,12 @@ themeButton.addEventListener("click", function () {
     if (document.body.classList.contains("dark-mode")) {
 
         localStorage.setItem("theme", "dark");
-        themeButton.textContent = "☀️ Light Mode";
+        themeButton.textContent = " Light Mode";
 
     } else {
 
         localStorage.setItem("theme", "light");
-        themeButton.textContent = "🌙 Dark Mode";
+        themeButton.textContent = " Dark Mode";
 
     }
 
